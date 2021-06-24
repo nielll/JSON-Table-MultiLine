@@ -36,8 +36,11 @@ export default function KeyValuePair({
       <label className="sr-only" htmlFor={`${id}-key`}>
         Change value of the key
       </label>
-      <input
+      <textarea
         type="text"
+        name="textarea--value"
+        rows="7" 
+        cols="50"
         className={isExisting ? 'key-value-pair__input--error' : ''}
         id={`${id}-key`}
         defaultValue={inputKey}
